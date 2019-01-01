@@ -1,0 +1,75 @@
+#service{
+    padding-top: 70px;
+}
+.services h2{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #967128;
+    margin-bottom: 20px;
+}
+.services p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #444;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.service-box{
+    text-align: center;
+    padding: 35px 15px;
+    overflow: hidden;
+    position: relative;
+    transition: all linear .3s;
+}
+.service-box:hover{
+    background: #967128;
+    cursor: pointer;
+}
+.service-box::before{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #fff #fff rgba(1,1,1,.2) rgba(0,0,0,.2);
+    top: -40px;
+    right: -40px;
+    transition: all linear .3s;
+}
+.service-box:hover::before{
+    top: 0;
+    right: 0;
+}
+.service-box i{
+    display: block;
+    font-size: 65px;
+    margin-bottom: 14px;
+    color: #967128;
+    transition: all linear .3s;
+}
+.service-box .title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: #545454;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 0 16px 0;
+    transition: all linear .3s;
+}
+.service-box .description{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #545454;
+    line-height: 25px;
+    margin: 0;
+    transition: all linear .3s;
+}
+.service-box:hover i,.service-box:hover .title,.service-box:hover .description{
+    color: #fff;
+}
